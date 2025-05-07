@@ -1,0 +1,23 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: TFG Backstage
+  description: Repositorio que incluye la información recopilada del desarrollo del TFG realizado por Alejandro Herrero en colaboración con ALTIA
+               sobre la implantación de un portal de desarrollador interno con Backstage.io que soporte el ecosistema de software de la compañía.
+  labels:
+    example.com/custom: custom_label_value
+  annotations:
+    example.com/service-discovery: artistweb
+    circleci.com/project-slug: github/example-org/artist-website
+  tags:
+    - markdown
+  links:
+    - url: https://garage.altia.es/Laboratory/backstage-tfg-alejandro
+      title: Repositorio alojado en Garage, de ALTIA
+      icon: dashboard
+      type: admin-dashboard
+spec:
+  type: repository
+  lifecycle: development
+  owner: alejandro-herrero
+  system: public-repos
